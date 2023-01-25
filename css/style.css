@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+}
+            /* Definir el contedor principal en una cuadrilla de 3x4 */
+.contenedor {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  height: 60vh;
+  width: 60vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+.consola {
+  grid-row: 1 / 5;
+}
+                    /* Dar formato a los mandos */
+            /* Mando izquierdo -parte azul- */
+#mando-blue{
+  background-color: #00bddc;
+  display: flex;
+  translate: 2.1vw;
+  height: 50vh;
+  width: 8vw;
+  /* degradado: offset-x /inset(izq-arri-der-abaj) color | offset-y | blur-radius(difuminara el color de alrededor)*/
+  box-shadow: inset 1vh 2vh 0.5vh -1vh rgba(255, 255, 255, 0.6),
+    inset 1vh -3.5vh 0.8vh -2.5vh rgba(0, 0, 0, 0.4),
+    inset 1.2vh 0 1vh -1vh rgba(0, 0, 0, 0.4);
+  border-radius: 10vh 0 0 10vh;
+}
+#menos{
+  background-color: #2e3134;
+  height: 0.5vh;
+  width: 1vw;
+  margin-top: 3.5vh;
+  margin-left: 6vw;
+}
+.joystick{
+  width: 3vw;
+  height: 6vh;
+  border-radius: 50%;
+  margin-top: 5vh;
+  margin-left: 3vw;
+}
+.joy-ext{
+  background-color: #2e3134;
+  width: 3vw;
+  height: 6vh;
+  border-radius: 50%;
+  border: 0.1vh solid black;
+  box-shadow: inset 0 2vh 2vh -1vh rgba(255, 255, 255, 0.6),
+    inset 0 -4vh 8vh -5vh rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joy-int{
+  border: 0.01vh solid #2e3134;
+  width: 2vw;
+  height: 3.8vh;
+  border-radius: 50%;
+  box-shadow: inset 0vh 0vh 1vh 0.05vh rgba(0, 0, 0, 0.8);
+}
+.arrows{
+  width: 5vw;
+  height: 10vh;
+  margin-top: 6.5vh;
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* No consigo que las flechas hacerlas fijas para que no se pueda hacer zoom y se salgan del contenedor */
+button{
+  border-radius: 50%;
+  border: 0.1vh solid #252627;
+  background-color: #2e3134;
+  box-shadow: inset 0 2vh 2vh -1vh rgba(255, 255, 255, 0.6),
+    inset 0 -4vh 8vh -5vh rgba(0, 0, 0, 0.8);
+  height: 3.5vh;
+  width: 2vw;
+  position: fixed;
+}
+#up{
+  margin-top: -10vh;
+}
+#down{
+  margin-top: 4vw;
+}
+#left{
+  margin-left: -4vw;
+}
+#right{
+  margin-left: 4vw;
+}
+#start{
+  background-color: #2e3134;
+  height: 3vh;
+  width: 1.5vw;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  box-shadow: inset 0 2vh 2vh -1vh rgba(255, 255, 255, 0.6),
+    inset 0 -4vh 8vh -5vh rgba(0, 0, 0, 0.8);
+  border-radius: 0.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#start-int{
+  background-color: #2e3134;
+  height: 2vh;
+  width: 1vw;
+  border: 0.01vh solid #424344;
+  box-shadow: inset 0 1.2vh 1vh -1vh rgba(255, 255, 255, 0.6),
+    inset 0 -0.5vh 1vh -1vh rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+            /* Dar estilo a la parte central */
+.central{
+  grid-column: 2 / 3;
+  background-color: #2e3134;
+  height: 50vh;
+  width: 40vw;
+  box-shadow: inset 0 1.2vh 1vh -1vh rgba(255, 255, 255, 0.96),inset 0 -0.5vh 1vh -1vh rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+        /* Marco de la pantalla */
+#pantalla{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  width: 37vw;
+  border-radius: 2vh;
+  background-color: black;
+}
+            /* Pantalla led interior */
+#pantalla-led{
+  display: flex;
+  justify-content: center;
+  height: 42vh;
+  width: 32vw;
+  background-color: #242425;
+}
+            /* Dar estilo al mando derecho -parte roja- */
+#mando-red{
+  background-color: #ff5449;
+  display: flex;
+  height: 50vh;
+  width: 8vw;
+  box-shadow: inset -0.7vh 1.5vh 1vh -0.5vh rgba(255, 255, 255, 0.6), inset 1vh -3.5vh 0.8vh -2.5vh rgba(0, 0, 0, 0.4), inset 0 0 1.2vh -0.5vh rgba(0, 0, 0, 0.4);
+  border-radius: 0 10vh 10vh 0;
+}
+#horizontal{
+  background-color: #2e3134;
+  height: 0.5vh;
+  width: 1vw;
+  margin-top: 3.5vh;
+  margin-left: 1vw;
+}
+#vertical{
+  background-color: #2e3134;
+  height: 0.5vh;
+  width: 1vw;
+  margin-top: -0.5vh;
+  margin-left: 1vw;
+  transform: rotate(90deg);
+}
+#X{
+  margin-top: -10vh;
+  margin-left: -1vw;
+}
+#Y{
+  margin-left: -5vw;
+}
+#A{
+  margin-left: 3vw;
+}
+#B{
+  margin-top: 4vw;
+  margin-left: -1vw;
+}
+#home{
+  background-color: #8b8c8c;
+  height: 3vh;
+  width: 1.5vw;
+  margin-left: 1vw;
+  margin-top: 5vh;
+  box-shadow: inset 0 2vh 2vh -1vh rgba(255, 255, 255, 0.6), inset 0 -4vh 8vh -5vh rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-int{
+  background-color: #2e3134;
+  height: 2vh;
+  width: 1vw;
+  border: 0.01vh solid #424344;
+  box-shadow: inset 0 1.2vh 1vh -1vh rgba(255, 255, 255, 0.6),inset 0 -0.5vh 1vh -1vh rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+            Efectos para los botones como si apretaramos
+#home-int:active {
+  margin-top: 0.5vh;
+}
+            /* Efecto de apretar el boton */
+#menos:active{
+ height: 0.4vh;
+ margin-top: 3.6vh;
+}
+.cruceta:active{
+ height: 0.4vh;
+ margin-top: 3.6vh;
+}
+.arrows-int:active {
+ margin: 0.5vh;
+}
+.joy-ext:active{
+ width: 2.8vw;
+ height: 5.5vh;
+ margin-left: 0.2vh;
+}
+#start-int:active{
+ margin-top: 0.5vh;
+}
+#pantalla-led:hover{
+ background-image: url(../assets/pantalla.png);
+ background-size:cover;
+ background-repeat: no-repeat;
+}

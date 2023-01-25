@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo switch</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+</head>
+<body>
+    <!-- Creo el contenedor principal al que le aplico Grid para dividir las partes de la consola -->
+    <div class="contenedor">
+        <!-- Creo el mando izquierdo -la parte azul- -->
+        <div class="consola" id="mando-blue">
+            <div>
+                <div id="menos"></div>
+                <div class="joystick">
+                    <div class="joy-ext">
+                        <div class="joy-int"></div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button id="up" class="arrows-int">&#9650</button>
+                    <button id="left" class="arrows-int">&#9664</button>
+                    <button id="right" class="arrows-int">&#9654</button>
+                    <button id="down" class="arrows-int">&#9660</button>
+                </div>
+                <div id="start">
+                    <div id="start-int"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Creo la parte central de la consola - pantalla -->
+        <div class="consola central">
+            <div id="pantalla">
+                <div id="pantalla-led"></div>
+            </div>
+        </div>
+
+        <!-- Creo el mando derecho -la parte roja- -->
+        <div class="consola" id="mando-red">
+            <div>
+                <div id="cruceta">
+                    <div id="horizontal"></div>
+                    <div id="vertical"></div>
+                </div>
+                <div class="arrows">
+                    <button class="arrows-int" id="X">X</button>
+                    <button class="arrows-int" id="Y">Y</button>
+                    <button class="arrows-int" id="A">A</button>
+                    <button class="arrows-int" id="B">B</button>  
+                </div>
+                <div class="joystick">
+                    <div class="joy-ext">
+                        <div class="joy-int"></div>
+                    </div>
+                </div>
+                <div id="home">
+                    <img id="home-int" src="./assets/home.png" alt="home">
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
