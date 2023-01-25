@@ -1,37 +1,27 @@
-##PROYECTO VIDEOCONSOLA NINTENDO SWITCH.
+### PROYECTO VIDEOCONSOLA NINTENDO SWITCH.
 
 ![Vista final](assets/FINAL.png)
 
 
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+## Descripción.
 
 ```bash
-pip install foobar
+
+Proyecto para Geekshubs. Diseño de una videoconsola Nintendo Switch.
 ```
 
-## Usage
+## Tecnologías usadas.
 
 ```python
-import foobar
 
-# returns 'words'
-foobar.pluralize('word')
+- HTML
+- CSS
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
 ```
 
-## Contributing
+## Como visualizar el proyecto.
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Solo debes ingresar en el siguiente enlace 
 
 ## License
 
