@@ -9,54 +9,63 @@
     <link rel="icon" type="image/x-icon" href="./assets/logo.png">
 </head>
 <body>
-    <!-- Creo el contenedor principal al que le aplico Grid para dividir las partes de la consola -->
+    <!--contenedor principal-->
     <div class="contenedor">
-        <!-- Creo el mando izquierdo -la parte azul- -->
-        <div class="consola" id="mando-blue">
+        <!--Mando izquierdo -parte azul- -->
+        <div class="consola" id="mando-azul">
             <div>
                 <div id="menos"></div>
+                <!-- Joystick izq -->
                 <div class="joystick">
                     <div class="joy-ext">
                         <div class="joy-int"></div>
                     </div>
                 </div>
-                <div class="arrows">
-                    <button id="up" class="arrows-int">&#9650</button>
-                    <button id="left" class="arrows-int">&#9664</button>
-                    <button id="right" class="arrows-int">&#9654</button>
+                <!-- botones flechas-->
+                <div class="flechas">
+                    <button id="arriba" class="flechas-int">&#9650</button>
+                    <button id="izquierda" class="flechas-int">&#9664</button>
+                    <button id="derecha" class="arrows-int">&#9654</button>
                     <button id="down" class="arrows-int">&#9660</button>
                 </div>
+                <!-- boton inferior izq -->
                 <div id="start">
                     <div id="start-int"></div>
                 </div>
             </div>
         </div>
 
-        <!-- Creo la parte central de la consola - pantalla -->
+        <!--parte central- pantalla -->
         <div class="consola central">
+            <!-- pantalla exterior -->
             <div id="pantalla">
+                <!-- pantalla interior led -->
                 <div id="pantalla-led"></div>
             </div>
         </div>
 
-        <!-- Creo el mando derecho -la parte roja- -->
+        <!--Mando derecho- parte roja- -->
         <div class="consola" id="mando-red">
             <div>
+                <!-- Crux superior dcha. -->
                 <div id="cruceta">
                     <div id="horizontal"></div>
                     <div id="vertical"></div>
                 </div>
+                <!-- botones con letras-->
                 <div class="arrows">
                     <button class="arrows-int" id="X">X</button>
                     <button class="arrows-int" id="Y">Y</button>
                     <button class="arrows-int" id="A">A</button>
                     <button class="arrows-int" id="B">B</button>  
                 </div>
+                <!-- Joystick dcha -->
                 <div class="joystick">
                     <div class="joy-ext">
                         <div class="joy-int"></div>
                     </div>
                 </div>
+                <!-- boton inferior dcha -->
                 <div id="home">
                     <img id="home-int" src="./assets/home.png" alt="home">
                 </div>

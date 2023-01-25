@@ -19,7 +19,7 @@ body {
 }
                     /* Dar formato a los mandos */
             /* Mando izquierdo -parte azul- */
-#mando-blue{
+#mando-azul{
   background-color: #00bddc;
   display: flex;
   translate: 2.1vw;
@@ -64,7 +64,7 @@ body {
   border-radius: 50%;
   box-shadow: inset 0vh 0vh 1vh 0.05vh rgba(0, 0, 0, 0.8);
 }
-.arrows{
+.flechas{
   width: 5vw;
   height: 10vh;
   margin-top: 6.5vh;
@@ -85,19 +85,19 @@ button{
   width: 2vw;
   position: fixed;
 }
-#up{
+#arriba{
   margin-top: -10vh;
 }
-#down{
+#abajo{
   margin-top: 4vw;
 }
-#left{
+#izquierda{
   margin-left: -4vw;
 }
-#right{
+#derecha{
   margin-left: 4vw;
 }
-#start{
+#inicio{
   background-color: #2e3134;
   height: 3vh;
   width: 1.5vw;
@@ -110,7 +110,7 @@ button{
   justify-content: center;
   align-items: center;
 }
-#start-int{
+#inicio-int{
   background-color: #2e3134;
   height: 2vh;
   width: 1vw;
