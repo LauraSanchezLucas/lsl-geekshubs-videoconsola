@@ -25,7 +25,6 @@ body {
   translate: 2.1vw;
   height: 50vh;
   width: 8vw;
-  /* degradado: offset-x /inset(izq-arri-der-abaj) color | offset-y | blur-radius(difuminara el color de alrededor)*/
   box-shadow: inset 1vh 2vh 0.5vh -1vh rgba(255, 255, 255, 0.6),
     inset 1vh -3.5vh 0.8vh -2.5vh rgba(0, 0, 0, 0.4),
     inset 1.2vh 0 1vh -1vh rgba(0, 0, 0, 0.4);
@@ -64,7 +63,7 @@ body {
   border-radius: 50%;
   box-shadow: inset 0vh 0vh 1vh 0.05vh rgba(0, 0, 0, 0.8);
 }
-.flechas{
+.flecha{
   width: 5vw;
   height: 10vh;
   margin-top: 6.5vh;
@@ -74,7 +73,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* No consigo que las flechas hacerlas fijas para que no se pueda hacer zoom y se salgan del contenedor */
+
 button{
   border-radius: 50%;
   border: 0.1vh solid #252627;
@@ -149,7 +148,7 @@ button{
   background-color: #242425;
 }
             /* Dar estilo al mando derecho -parte roja- */
-#mando-red{
+#mando-rojo{
   background-color: #ff5449;
   display: flex;
   height: 50vh;
@@ -186,7 +185,7 @@ button{
   margin-top: 4vw;
   margin-left: -1vw;
 }
-#home{
+#casa{
   background-color: #8b8c8c;
   height: 3vh;
   width: 1.5vw;
@@ -198,7 +197,7 @@ button{
   justify-content: center;
   align-items: center;
 }
-#home-int{
+#casa-int{
   background-color: #2e3134;
   height: 2vh;
   width: 1vw;
@@ -207,7 +206,7 @@ button{
   border-radius: 50%;
 }
             Efectos para los botones como si apretaramos
-#home-int:active {
+#casa-int:active {
   margin-top: 0.5vh;
 }
             /* Efecto de apretar el boton */
@@ -219,7 +218,7 @@ button{
  height: 0.4vh;
  margin-top: 3.6vh;
 }
-.arrows-int:active {
+.flecha-int:active {
  margin: 0.5vh;
 }
 .joy-ext:active{
@@ -227,7 +226,7 @@ button{
  height: 5.5vh;
  margin-left: 0.2vh;
 }
-#start-int:active{
+#inicio-int:active{
  margin-top: 0.5vh;
 }
 #pantalla-led:hover{
